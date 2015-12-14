@@ -1,16 +1,18 @@
-var React = require('react');
 var ReactDOM = require('react-dom');
-var App2 = React.createClass({
-  render: function(){
-    return(
-    <div>
-      <h2>test test</h2>
-    </div>
+const React = require('react');
+const RaisedButton = require('material-ui/lib/raised-button');
+
+const MyAwesomeReactComponent = React.createClass({
+  render() {
+    return (
+        <RaisedButton label="Default" />
     );
-  }
+  },
 });
 
+module.exports = MyAwesomeReactComponent;
+
 ReactDOM.render(
-  <App2 />,
+  <MyAwesomeReactComponent />,
   document.getElementById('app2')
 );

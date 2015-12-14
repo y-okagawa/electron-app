@@ -14,8 +14,10 @@
     "electron-prebuilt": "^0.36.0",
     "gulp-duration": "0.0.0",
     "gulp-util": "^3.0.7",
+    "material-ui": "^0.14.0-rc1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
+    "react-tap-event-plugin": "^0.2.1",
     "reactify": "^1.1.1",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.6.1"
