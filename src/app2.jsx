@@ -1,18 +1,12 @@
-var ReactDOM = require('react-dom');
 const React = require('react');
-const RaisedButton = require('material-ui/lib/raised-button');
+const ReactDOM = require('react-dom');
+const injectTapEventPlugin = require("react-tap-event-plugin");
+const DatePicker = require('material-ui/lib/date-picker/date-picker');
+const DatePickerDialog = require('material-ui/lib/date-picker/date-picker-dialog');
 
-const MyAwesomeReactComponent = React.createClass({
-  render() {
-    return (
-        <RaisedButton label="Default" />
-    );
-  },
-});
-
-module.exports = MyAwesomeReactComponent;
+injectTapEventPlugin();
 
 ReactDOM.render(
-  <MyAwesomeReactComponent />,
+ <DatePicker hintText="DatePicker" />,
   document.getElementById('app2')
 );
